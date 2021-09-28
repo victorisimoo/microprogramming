@@ -1,0 +1,25 @@
+----- | Hoja de trabajo número dos   | -----
+----- | Nombre: Victor Noe Hernández | -----
+----- | Carné: 1301219               | -----
+
+Ejercicio 1:
+a.  Cuando se genera el ejecutable del archivo "Ejemplo2.asm", 
+    ¿cuál es la advertencia que se muestra en pantalla? ¿Por qué
+    muestra esta advertencia?
+
+    R://    La advertencia que muestra es un: warning: no stack, el
+            El cual aparece porque no se inicializó en la cabecera el segmento 
+            de pila (.stack).
+
+b.  Modificando el programa para que no muestre la advertencia, 
+    ¿cuál es el resultado del programa, es decir, por qué se 
+    imprime ese carácter y no un 30?
+
+    R://    El carácter resultante es *. La razón es porque la suma se 
+    |       está realizando en caracteres hexadecimales y no numéricos.    
+
+c.  Modifique el código del archivo "Ejemplo2.asm" y utilizando la tabla
+    de códigos ascii, imprima en pantalla una letra "Z".
+
+    R://    Para esto se necesitó cambiar el valor "15h", por un "2dh", para
+            que al realizar la suma, obtuviera como resultado la "Z".

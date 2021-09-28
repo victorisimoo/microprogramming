@@ -1,0 +1,28 @@
+Nombre: Victor Noé Hernández Meléndez
+Carné: 1301219
+
+----- | Respuesta a las preguntas planteadas | -----
+1. ¿Cuándo se genera el archivo .obj a partir del archivo .asm? 
+¿Qué información nos muestra en consola y qué significa?
+El archivo .obj se genera a partir de pasar el archivo .asm por
+por el software TASM. La información que esta ejecución muestra
+el nombre del assembling file, mensajes de error, mensajes de 
+advertencia, passes y la memoria restante.
+
+2. ¿En qué punto se crea el archivo ejecutable?
+El ejecutable se crea luego de ejecutar el comando de TLINK con el
+archivo .obj resultante del comando TASM.  
+
+3. ¿Cuál es la interrupción utilizada para imprimir una cadena
+de caracteres?
+La interrupción utilizada para imprimir una cadena de caracteres
+es 09h.
+
+4. ¿Cuál es la interrupción utilizada para imprimir solamente un 
+caracter?
+La interrupción utilizada para imprimir un caracter es 02h.
+
+5. ¿Qué registros entran en juego al ejecutar una interrupción
+de la serie 21h?
+Los registros que entran en juego son correspondientes al área 
+de la memoria correspondiente a DTA.
