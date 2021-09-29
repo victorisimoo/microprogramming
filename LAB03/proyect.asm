@@ -61,7 +61,6 @@
         mov al, number
         cmp al, 50
         jc  lower
-        cmp al, 50
         jnz higher
 
     higher:

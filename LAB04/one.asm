@@ -1,15 +1,13 @@
 .model small
 .data 
-
     number db ?
     residue db ?
     msg0 db 10, 13, 7, 'Enter number to analyze: ', '$'
     msg1 db 10, 13, 7, 'The number is even!', '$'
     msg2 db 10, 13, 7, 'The number is odd!', '$'
-
 .stack
 .code
-    program:
+    one:
         ; program start
         mov ax, @data
         mov ds, ax
@@ -34,19 +32,18 @@
         ; verification
         mov al, residue
         cmp al, 0
-        jz even
-        cmp al, 0
-        jzn odd
-
+        jc evenm
+        jnz oddm
+        
         ; even
-        even:
+        evenm:
             mov ah, 09h
             lea dx, msg1
             int 21h
             jmp endprogram  ;end program method
 
         ; odd
-        odd:
+        oddm:
             mov ah, 09h
             lea dx, msg2
             int 21h
@@ -57,5 +54,5 @@
             mov ah, 4ch
             int 21h
         ;
-    end program
+end one
 ;
